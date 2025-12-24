@@ -112,7 +112,7 @@ function WorksContent() {
 
   return (
     <>
-      <section className="relative pt-32 sm:pt-40 pb-8 sm:pb-10">
+      <section className="relative pt-32 sm:pt-40 pb-4 sm:pb-5">
         <div className="absolute inset-0 bg-[rgb(27,56,77)]" />
         <div className="container mx-auto px-6 relative">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-8">
@@ -164,7 +164,7 @@ function WorksContent() {
             </div>
 
             {/* Right side: Contact Button only */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="hidden lg:flex justify-center lg:justify-end">
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 text-base font-medium hover:bg-white/90 transition-colors"
@@ -179,7 +179,7 @@ function WorksContent() {
       </section>
 
       {/* Works Grid */}
-      <section className="py-8 sm:py-10 bg-[rgb(27,56,77)]">
+      <section className="pt-4 sm:pt-5 pb-8 sm:pb-10 bg-[rgb(27,56,77)]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredWorks.map((work) => (
@@ -244,6 +244,18 @@ function WorksContent() {
               <p className="text-primary-foreground/80">該当する施工事例がありません</p>
             </div>
           )}
+
+          {/* Mobile only: Contact Button */}
+          <div className="flex lg:hidden justify-center mt-10">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 text-base font-medium hover:bg-white/90 transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              お問い合わせフォームへ
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
         </div>
       </section>
     </>

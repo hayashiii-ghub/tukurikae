@@ -33,11 +33,13 @@ export function ContactSection() {
           >
             <div className="absolute inset-0 bg-white/10 transition-opacity duration-300 group-hover:bg-white/20"></div>
             <div className="flex items-center gap-10 relative z-10">
-              <Mail className="w-8 h-8 sm:w-12 sm:h-12 text-white transition-transform duration-300 group-hover:scale-110 animate-pulse sm:animate-none" />
-              <p className="text-white text-xl sm:text-2xl font-medium">info@tsukurikae.jp</p>
+              <Mail className="w-8 h-8 sm:w-12 sm:h-12 text-white transition-transform duration-300 group-hover:scale-110" />
+              <p className="text-white text-lg sm:text-2xl font-medium">info@tsukurikae.jp</p>
             </div>
-            <div className="absolute right-6 sm:right-8 top-1/2 -translate-y-1/2 z-10 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-              <span className="text-white/70 text-xl sm:text-2xl animate-bounce-x">→</span>
+            <div className="absolute right-6 sm:right-8 top-1/2 -translate-y-1/2 z-10">
+              <span className="text-white/70 text-xl sm:text-2xl sm:opacity-0 sm:group-hover:opacity-100 transition-opacity animate-bounce-x">
+                →
+              </span>
             </div>
           </Link>
 
@@ -50,11 +52,13 @@ export function ContactSection() {
           >
             <div className="absolute inset-0 bg-pink-500/15 transition-opacity duration-300 group-hover:bg-pink-500/25"></div>
             <div className="flex items-center gap-10 relative z-10">
-              <Instagram className="w-8 h-8 sm:w-12 sm:h-12 text-white transition-transform duration-300 group-hover:scale-110 animate-pulse sm:animate-none" />
-              <p className="text-white text-xl sm:text-2xl font-medium">@tsukurikae_kominka</p>
+              <Instagram className="w-8 h-8 sm:w-12 sm:h-12 text-white transition-transform duration-300 group-hover:scale-110" />
+              <p className="text-white text-lg sm:text-2xl font-medium">@tsukurikae_kominka</p>
             </div>
-            <div className="absolute right-6 sm:right-8 top-1/2 -translate-y-1/2 z-10 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-              <span className="text-white/70 text-xl sm:text-2xl animate-bounce-x">→</span>
+            <div className="absolute right-6 sm:right-8 top-1/2 -translate-y-1/2 z-10">
+              <span className="text-white/70 text-xl sm:text-2xl sm:opacity-0 sm:group-hover:opacity-100 transition-opacity animate-bounce-x">
+                →
+              </span>
             </div>
           </a>
         </div>

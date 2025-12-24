@@ -112,12 +112,12 @@ export function PortfolioSection() {
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8">
               <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-4">{item.title}</h3>
               {item.isViewMore ? (
-                <>
+                <div className="flex flex-col items-center">
                   <div className="w-12 h-[1px] bg-white/60 group-hover:w-20 transition-all duration-300" />
-                  <div className="absolute right-6 sm:right-8 top-1/2 -translate-y-1/2 z-10 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
-                    <span className="text-white/70 text-xl sm:text-2xl animate-bounce-x">→</span>
-                  </div>
-                </>
+                  <span className="text-white/70 text-xl sm:text-2xl mt-3 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity animate-bounce-x">
+                    →
+                  </span>
+                </div>
               ) : (
                 <div className="w-12 h-[1px] bg-white/60 group-hover:w-20 transition-all duration-300" />
               )}

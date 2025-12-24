@@ -6,7 +6,7 @@ export function ServicesSection() {
   const [currentPage, setCurrentPage] = useState(0)
   const containerRef = useRef<HTMLDivElement>(null)
   const totalPages = 4
-  const containerHeightMultiplier = 5
+  const containerHeightMultiplier = 6
 
   const businessAreas = [
     {
